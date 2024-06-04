@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game: Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="tela-jogo">
+        <div class="jogo">
+            <h1>PC</h1>
+            <div class="lance-pc">
+                <img id="lance-pc" src="imagens/da.png" alt="">
+            </div>
+        </div>
+
+        <div class="jogar-resetar">
+            <input class="button" type="button" value="jogar" onclick="jogar()">
+            <input class="button" type="button" value="resetar" onclick="resetar()">
+        </div>
+
+        <div class="menu-jogo">
+            <div class="opcoes"><img class="opcao" opt="pedra" src="imagens/pedra.jpg" alt=""></div> 
+            <div class="opcoes"><img class="opcao" opt="tesoura" src="imagens/tesoura.jpg" alt=""></div> 
+            <div class="opcoes"><img class="opcao" opt="papel" src="imagens/papel.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="resultado">
+        <h1>Resultado:</h1>
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>
